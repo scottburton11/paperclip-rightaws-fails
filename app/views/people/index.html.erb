@@ -1,0 +1,15 @@
+<h1>Listing people</h1>
+
+
+<div id="people">
+  <% @people.each do |person| %>
+    <div id="person_<%= person.id %>" class="person">
+      <%= image_tag person.picture(:thumb) %>
+      <h3><%= person.name %></h3>
+    </div>
+  <% end %>
+</div>
+
+<br />
+
+<%= link_to 'New person', new_person_path %>

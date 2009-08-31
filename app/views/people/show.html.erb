@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @person.name %>
+</p>
+
+<p>
+  <b>Picture file name:</b>
+  <%=h @person.picture_file_name %>
+</p>
+
+<p>
+  <b>Picture content type:</b>
+  <%=h @person.picture_content_type %>
+</p>
+
+<p>
+  <b>Picture file size:</b>
+  <%=h @person.picture_file_size %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
